@@ -6,7 +6,7 @@
     "color-blend": "index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "exit 0",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
