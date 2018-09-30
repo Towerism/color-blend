@@ -1,12 +1,14 @@
 {
   "name": "@towerism/color-blend",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "color blending utility for the command line",
   "bin": {
     "color-blend": "index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "keywords": [
     "color",
@@ -19,9 +21,15 @@
   "author": "Martin Fracker, Jr. <martin.frackerjr@gmail.com>",
   "license": "GPL-3.0",
   "dependencies": {
-    "2": "^2.0.0",
     "color": "^3.0.0",
-    "commander": "^2.18.0",
-    "shade-blend-color": "^1.0.0"
+    "commander": "^2.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Towerism/color-blend.git"
+  },
+  "devDependencies": {
+    "semantic-release": "^15.9.16",
+    "travis-deploy-once": "^5.0.9"
   }
 }
