@@ -13,6 +13,12 @@ program
     .option('-f, --factor <[0:1]>', 'darkening factor')
     .action(mixColorWith('black'))
 
+program
+    .command('mix <color>')
+    .option('-f, --factor <[0:1]>', 'mix factor')
+    .option('-w, --with <color>', 'color to mix with')
+    .action((color, cmd) => mixColorWith(cmd.with)(color, cmd))
+
 program.parse(process.argv)
 
 function mixColorWith(toMixWith) {
